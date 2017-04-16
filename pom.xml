@@ -10,7 +10,7 @@
         <version>1.3.0.RELEASE</version>
     </parent>
 
-    <groupId>chen's uber fleet project</groupId>
+    <groupId>chen-uber-fleet-project</groupId>
     <artifactId>spring-cloud-uber-vehicle-fleet</artifactId>
     <version>1.0.0-BUILD-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -28,7 +28,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>apring-cloud-starter-parent</artifactId>
+                <artifactId>spring-cloud-starter-parent</artifactId>
                 <version>Brixton.M2</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -39,10 +39,10 @@
     <build>
         <plugins>
             <plugin>
-                <!-- skip deploy, this is a test module -->
+                <!--skip deploy (this is just a test module) -->
                 <artifactId>maven-deploy-plugin</artifactId>
                 <configuration>
-                    <skip>true</skip>
+                    <skip>false</skip>
                 </configuration>
             </plugin>
         </plugins>
@@ -59,14 +59,13 @@
         </repository>
         <repository>
             <id>spring-milestones</id>
-            <name>Spring MileStones</name>
+            <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>
-
     <pluginRepositories>
         <pluginRepository>
             <id>spring-snapshots</id>
