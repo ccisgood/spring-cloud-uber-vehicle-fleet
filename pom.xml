@@ -10,14 +10,14 @@
         <version>1.3.0.RELEASE</version>
     </parent>
 
-    <groupId>chen's project</groupId>
+    <groupId>chen's uber fleet project</groupId>
     <artifactId>spring-cloud-uber-vehicle-fleet</artifactId>
     <version>1.0.0-BUILD-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Spring Could Uber Vehicle Fleet</name>
 
     <modules>
-
+        <module>fleet-location-simulator</module>
     </modules>
 
     <properties>
