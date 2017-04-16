@@ -1,0 +1,17 @@
+package demo.model;
+
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
+public class CurrentPosition {
+
+    private String vin;
+    private String location;
+    private VehicleStatus vehicleStatus = VehicleStatus.NONE;
+    private Double speed;
+    private Double heading;
+    private FaultCode faultCode;
+}
