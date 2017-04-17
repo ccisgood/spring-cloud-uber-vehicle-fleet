@@ -15,7 +15,6 @@ import net.sf.sprockets.google.Places;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.InvalidIsolationLevelException;
 import org.springframework.util.Assert;
 
 import java.io.IOException;
