@@ -18,6 +18,8 @@
 
     <modules>
         <module>fleet-location-simulator</module>
+        <module>fleet-location-ingest</module>
+
     </modules>
 
     <properties>
